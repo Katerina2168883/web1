@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(106, 154, 243);
+  border-radius: 50%;
+}
+.a {
+  margin-left: 10%;
+}
+.b {
+  margin-left: 47%;
+}
+.c {
+  margin-left: 31%;
+}

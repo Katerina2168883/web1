@@ -1,0 +1,59 @@
+/*css/grid.css*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-column-gap: 30px;
+    grid-row-gap: 30px; */
+
+  gap: 30px;
+}
+.grid-item {
+  background-color: rgb(247, 241, 159);
+  width: 100%;
+  height: 200px;
+}
+
+.fancy {
+  background-color: rgb(238, 195, 187);
+  background: #009aff;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #7891e6 0%,
+    #fac0eb 80%
+  );
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.49);
+  border: 2px dashed green;
+  border-radius: 20px;
+}
+.picture {
+  /*background-image: url("https://images.fineartamerica.com/images-medium-5/garfield-cute-ncuddly-brand-a-transparent.png");
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;*/
+  background: url("https://images.fineartamerica.com/images-medium-5/garfield-cute-ncuddly-brand-a-transparent.png")
+    no-repeat center center;
+  background-size: cover;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
